@@ -1,8 +1,24 @@
-import React from 'react';
-import { StyleSheet, Text, View, KeyboardAvoidingView, TextInput, TouchableOpacity } from 'react-native';
+import React, {useState} from 'react';
+import { StyleSheet, Text, View, KeyboardAvoidingView, TextInput, TouchableOpacity, Keyboard } from 'react-native';
 import Task from './components/Task';
 
 export default function App() {
+
+    const [task, setTask] = useState();
+    const [taskItems, setTaskItems] = useState([]);
+
+    const handleAddTask = ()  => {
+      Keyboard.dismiss();
+        setTaskItems([...taskItems, task])
+        setTask(null);
+    }
+
+    const completeTask = (index) => {
+        let itemCopy = [...taskItems];
+        itemCopy.splice(index, 1);
+        setTaskItems(itemCopy);
+    }
+
   return (
     <View style={styles.container}>
       {/*Todays tasks*/}
@@ -11,8 +27,17 @@ export default function App() {
 
       <View style={styles.items}>
       {/*This is where tasks will be shown ! */}
-        <Task text={'Text one'} />
-        <Task text={'Text two'} />
+      {
+        taskItems.map((item, index) => {
+        return (
+          <TouchableOpacity key={index} onPress = {() => completeTask(index)}>
+          <Task  text={item} />
+          </TouchableOpacity>
+        )
+         
+        }) 
+      }
+      
       </View>
       </View>
 
@@ -21,8 +46,8 @@ export default function App() {
       behavior={Platform.OS === "ios" ? "padding" : "height"}
       style={styles.writeTaskWrapper}
       >
-      <TextInput style={styles.input} placeholder={'Write your task here pwese'} />
-      <TouchableOpacity>
+      <TextInput style={styles.input} placeholder={'Write your task here pweaaase...'} value={task} onChangeText={text => setTask(text)} />
+      <TouchableOpacity onPress={() => handleAddTask()} >
         <View style={styles.addWrapper}>
           <Text style={styles.addText}>+</Text>
         </View>
@@ -51,6 +76,7 @@ const styles = StyleSheet.create({
 
   },
   writeTaskWrapper:{
+    paddingLeft: 15,
     position: 'absolute',
     bottom: 60,
     width: '100%',
@@ -68,6 +94,7 @@ const styles = StyleSheet.create({
     width: 250
   },
   addWrapper:{
+    marginRight: 15,
     width: 60,
     height: 60,
     backgroundColor: '#fff',
@@ -75,6 +102,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     borderColor: '#C0C0C0',
-    borderWidth: 1
+    borderWidth: 1,
   },
 });
