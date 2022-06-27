@@ -1,23 +1,47 @@
 import React, {useState} from 'react';
-import { StyleSheet, Text, View, KeyboardAvoidingView, TextInput, TouchableOpacity, Keyboard } from 'react-native';
+import { StyleSheet, Text, View, KeyboardAvoidingView, TextInput, TouchableOpacity, Keyboard, Alert } from 'react-native';
 import Task from './components/Task';
 
 export default function App() {
 
-    const [task, setTask] = useState();
+    const [task, setTask] = useState('');
     const [taskItems, setTaskItems] = useState([]);
+  
 
+      
     const handleAddTask = ()  => {
+      
+
+      
       Keyboard.dismiss();
         setTaskItems([...taskItems, task])
         setTask(null);
+      
     }
 
     const completeTask = (index) => {
+
         let itemCopy = [...taskItems];
         itemCopy.splice(index, 1);
         setTaskItems(itemCopy);
     }
+
+   const confirm = () => {
+
+     Alert.alert(
+       "Delete task",
+       "Are you sure you want to delete this task ?",
+       [
+         {
+           text: "Bliz no hh",
+           onPress: () => console.log("Cancel Pressed")  ,
+           style: "cancel"
+         },
+         { text: "YES", onPress: () => completeTask() }
+       ]
+     );
+   
+  }
 
   return (
     <View style={styles.container}>
@@ -30,7 +54,7 @@ export default function App() {
       {
         taskItems.map((item, index) => {
         return (
-          <TouchableOpacity key={index} onPress = {() => completeTask(index)}>
+          <TouchableOpacity key={index} onPress={() => confirm()}>
           <Task  text={item} />
           </TouchableOpacity>
         )
@@ -68,9 +92,11 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20, 
   },
   sectionTitles: {
+    fontFamily: 'monospace' ,
     fontSize: 24,
     fontWeight: 'bold',
-    paddingBottom: 35
+    paddingBottom: 35,
+    textAlign: 'center'
   },
   items: {
 
@@ -102,6 +128,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     borderColor: '#C0C0C0',
-    borderWidth: 1,
+    borderWidth: 1
   },
+  addText:{
+    fontSize: 18,
+
+  }
 });
