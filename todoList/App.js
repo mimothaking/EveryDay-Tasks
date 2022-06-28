@@ -17,13 +17,8 @@ export default function App() {
         setTaskItems([...taskItems, task])
         setTask(null);
       }      
-      else {
-
-        console.log(task)
+      else 
         Alert.alert('Empty field ?', 'Pwease enter something friend !')
-        return;
-        }
-      
       
     }
 
@@ -34,7 +29,7 @@ export default function App() {
         setTaskItems(itemCopy);
     }
 
-   const confirm = () => {
+   const confirm = (index) => {
 
      Alert.alert(
        "Delete task",
@@ -45,7 +40,7 @@ export default function App() {
            onPress: () => console.log("Cancel Pressed")  ,
            style: "cancel"
          },
-         { text: "YES", onPress: () => completeTask() }
+         { text: "YES", onPress: () => completeTask(index) }
        ]
      );
    
@@ -62,7 +57,7 @@ export default function App() {
       {
         taskItems.map((item, index) => {
         return (
-          <TouchableOpacity key={index} onPress={() => confirm()}>
+          <TouchableOpacity key={index} onPress={() => confirm(index)}>
           <Task  text={item} />
           </TouchableOpacity>
         )
