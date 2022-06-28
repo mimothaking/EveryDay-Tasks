@@ -4,18 +4,26 @@ import Task from './components/Task';
 
 export default function App() {
 
-    const [task, setTask] = useState('');
+    const [task, setTask] = useState();
     const [taskItems, setTaskItems] = useState([]);
   
 
       
     const handleAddTask = ()  => {
-      
-
-      
-      Keyboard.dismiss();
+        
+      if (!task == '')
+      {
+        Keyboard.dismiss();
         setTaskItems([...taskItems, task])
         setTask(null);
+      }      
+      else {
+
+        console.log(task)
+        Alert.alert('Empty field ?', 'Pwease enter something friend !')
+        return;
+        }
+      
       
     }
 
@@ -70,7 +78,8 @@ export default function App() {
       behavior={Platform.OS === "ios" ? "padding" : "height"}
       style={styles.writeTaskWrapper}
       >
-      <TextInput style={styles.input} placeholder={'Write your task here pweaaase...'} value={task} onChangeText={text => setTask(text)} />
+      <TextInput style={styles.input} placeholder={'Write your task here pweaaase...'} value={task} onChangeText={  text => setTask(text) }
+         />
       <TouchableOpacity onPress={() => handleAddTask()} >
         <View style={styles.addWrapper}>
           <Text style={styles.addText}>+</Text>
