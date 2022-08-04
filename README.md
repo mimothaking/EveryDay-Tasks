@@ -45,8 +45,10 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
+<div align="center">
 <br>
-<img align="center" src="./todoList/images/homepage.jpeg" alt="main page" width="300" height="500" >
+<img src="./todoList/images/homepage.jpeg" alt="main page" width="300" height="500" > 
+</div>
 <br>
 EveryDay Tasks is a basic task manager mobile application ! With simple clicks you can add or delete your own tasks.
 With a very basic design, you can manage your day however you like  
