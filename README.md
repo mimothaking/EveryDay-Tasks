@@ -87,6 +87,7 @@ _Below is an example of how you can instruct your audience on installing and set
    ```sh
    npm install --global expo-cli (if you dont have expo installed)
    ```
+   IF YOU WANT TO CREATE A NEW PROJECT :
    ```sh
    expo init projectName
    ```
