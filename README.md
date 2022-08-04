@@ -46,9 +46,10 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 <br>
-<img src="public/1stpic.png" alt="main page">
+<img src="./todoList/images/homepage.jpeg" alt="main page">
 <br>
-We have vehicles for every budget and need – from family mini-vans, to sports cars, The selection varies from week to week, but there are always good, clean, used cars at excellent prices. Capital Auto Auction sells vehicles that are auctioned off by our professional independent auctioneers. The bargains are outrageous!!!
+EveryDay Tasks is a basic task manager mobile application ! With simple clicks you can add or delete your own tasks.
+With a very basic design, you can manage your day however you like  
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
