@@ -106,7 +106,7 @@ You can add your tasks by writing them down and clicking the + button :D
 
 <div align="center"><img src="./todoList/images/tasks.jpeg" alt="Home page" width="300" height="570"></div>
 
-And finally you can delete the task selected. )
+And finally you can delete the task selected.
 
 <div align="center"><img src="./todoList/images/delete.jpeg" alt="Delete Task" width="300" height="570"></div>
 
@@ -115,19 +115,19 @@ And finally you can delete the task selected. )
 
 
 
-
 <!-- ROADMAP -->
+
 ## Roadmap
 
-- [x] Add Live Chat
-- [x] Add Role Managment
+- [x] Add A Calendar
+- [x] Add A Reminder
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- LICENSE -->
 ## License
 
-Distributed under the ISI License.
+Distributed under the MIMOT License.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -136,11 +136,8 @@ Distributed under the ISI License.
 <!-- CONTACT -->
 ## Contact
 
-Kaouachi El Mehdi - kaouachimehdi2@gmail.com
-<br>
 Machmachi Mohamed - machmachimohamed1998@gmail.com
 <br>
-Project Link: https://github.com/Mehdi-RB26/React-Js
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
