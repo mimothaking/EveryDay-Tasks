@@ -99,32 +99,16 @@ _Below is an example of how you can instruct your audience on installing and set
    expo start
    ```
 
-### Bidding section
+### Home Page
 
-After clicking on the green button (Start now !) on the top right corner in the landing page ! The bidding page will automatically appear
+We provide for the moment just one simple interface that shows all of your tasks.
+You can add your tasks by writing them down and clicking the + button :D
 
-<img src="public/auction1.png" alt="Bidding page">
+<img src="./todoList/images/tasks.jpeg" alt="Home page">
 
-Like bidding website you must create an account and login to start your day :
+And finally you can delete the task selected. )
 
-<img src="public/Picture3.png" alt="Register modal">
-
-<img src="public/Picture4.png" alt="Login modal">
-
-You will notice that a new button appears in the bidding section so you can add your car if you want to get rid of it of course :D
-
-<img src="public/Picture5.png" alt="Logedin page">
-
-<img src="public/Picture6.png" alt="AddCAR MODAL">
-
-And finally you can see your own cars and also other cars if you want to get a new ride ;)
-
-<img src="public/Picture7.png" alt="Auctioncars page">
-
-<img src="public/Picture8.png" alt="Auctioncars page">
-
-
-
+<img src="./todoList/images/delete.jpeg" alt="Delete Task">
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
