@@ -104,11 +104,11 @@ _Below is an example of how you can instruct your audience on installing and set
 We provide for the moment just one simple interface that shows all of your tasks.
 You can add your tasks by writing them down and clicking the + button :D
 
-<img src="./todoList/images/tasks.jpeg" alt="Home page" width="300" height="570">
+<div align="center"><img src="./todoList/images/tasks.jpeg" alt="Home page" width="300" height="570"></div>
 
 And finally you can delete the task selected. )
 
-<img src="./todoList/images/delete.jpeg" alt="Delete Task" width="300" height="570">
+<div align="center"><img src="./todoList/images/delete.jpeg" alt="Delete Task" width="300" height="570"></div>
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
