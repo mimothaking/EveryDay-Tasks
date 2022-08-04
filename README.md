@@ -3,17 +3,16 @@
 <br />
 <div align="center">
 
-  <img src="public/icona.png" alt="Logo" width="80" height="80">
+  <img src="images/tasks.ico" alt="Logo" width="80" height="80">
 
-  <h3 align="center">Car-Auction</h3>
+  <h3 align="center">EveryDay Tasks Manager</h3>
 
   <p align="center">
-    Car Auction Made Easy
+    Manage your tasks easily with our basic designed mobile application with "EXPO"
     <br />
-    <a href="https://github.com/Mehdi-RB26/React-Js"><strong>Explore the docs »</strong></a>
+    <strong>React native Application</strong>
     <br />
     <br />
-    <a href="https://carauction69.netlify.app">View Demo</a>
   </p>
 </div>
 
