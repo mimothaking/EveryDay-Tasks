@@ -46,7 +46,7 @@
 ## About The Project
 <div align="center">
 <br>
-<img src="./todoList/images/homepage.jpeg" alt="main page" width="300" height="550" > 
+<img src="./todoList/images/homepage.jpeg" alt="main page" width="300" height="570" > 
 </div>
 <br>
 EveryDay Tasks is a basic task manager mobile application ! With simple clicks you can add or delete your own tasks.
@@ -104,11 +104,11 @@ _Below is an example of how you can instruct your audience on installing and set
 We provide for the moment just one simple interface that shows all of your tasks.
 You can add your tasks by writing them down and clicking the + button :D
 
-<img src="./todoList/images/tasks.jpeg" alt="Home page">
+<img src="./todoList/images/tasks.jpeg" alt="Home page" width="300" height="570">
 
 And finally you can delete the task selected. )
 
-<img src="./todoList/images/delete.jpeg" alt="Delete Task">
+<img src="./todoList/images/delete.jpeg" alt="Delete Task" width="300" height="570">
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
