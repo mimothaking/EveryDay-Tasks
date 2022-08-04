@@ -17,7 +17,6 @@
 </div>
 
 
-
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
@@ -42,34 +41,29 @@
 </details>
 
 
-
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
 <div align="center">
 <br>
-<img src="./todoList/images/homepage.jpeg" alt="main page" width="300" height="500" > 
+<img src="./todoList/images/homepage.jpeg" alt="main page" width="300" height="550" > 
 </div>
 <br>
 EveryDay Tasks is a basic task manager mobile application ! With simple clicks you can add or delete your own tasks.
-With a very basic design, you can manage your day however you like  
+With a very basic design, you can manage your day however you like. 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+This section is about the major frameworks/libraries used to bootstrap this mini project :
 
 
 * [React.js](https://reactjs.org/)
+* [React Native](https://reactnative.dev)
 * [UseState](https://reactjs.org/docs/hooks-reference.html#usestate)
-* [UseEffect](https://reactjs.org/docs/hooks-reference.html#useeffect)
-* [UseContext](https://reactjs.org/docs/hooks-reference.html#usecontext)
-* [UseRef](https://reactjs.org/docs/hooks-reference.html#useref)
-* [UseFirestore](https://firebase.google.com/products/firestore?gclid=CjwKCAiA55mPBhBOEiwANmzoQq35Ste1jnK9RNdYhgzA7GNPxfcaY2yzt4gf9oA3E293WrX_1WHuEhoC5yIQAvD_BwE&gclsrc=aw.ds)
-* [UseStorage](https://www.npmjs.com/package/react-use-storage)
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
+
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -77,6 +71,7 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 
 <!-- GETTING STARTED -->
+
 ## Getting Started
 
 ### Installation
@@ -86,15 +81,21 @@ _Below is an example of how you can instruct your audience on installing and set
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/mimothaking/EveryDay-Tasks
    ```
 2. Install NPM packages
    ```sh
-   npm install
+   npm install --global expo-cli (if you dont have expo installed)
    ```
-2. Run Project
    ```sh
-   npm start
+   expo init projectName
+   ```
+    ```sh
+   cd projectName
+   ```
+3. Run Project
+   ```sh
+   expo start
    ```
 
 ### Bidding section
